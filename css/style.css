@@ -1,8 +1,13 @@
 
 /*Navegation codes*/
 .card-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
     background-color: var(--body-color);
     color: #FFFFFF;
+    z-index: 999;   
 }
 
 .menu-container {
@@ -19,14 +24,34 @@
 .menu-container li a {
     color: #FFFFFF;
     padding: 10px;
+    transition: color 0.3s;
 }
-.menu-container li a:hover {
+
+.menu-container li a:link,
+.menu-container li a:visited {
+    color: var(--title-color);
+}
+
+.menu-container li a:hover,
+.menu-container li a:active {
     color: rgb(255, 158, 12);
 } /*End navegation codes*/
 
+.menu-container li a:hover {
+    color: var(--dark-orange);
+}
+
+
+.menu-container li a.selected,
+.menu-container li a.active {
+    color: var(--dark-orange);
+}
+
+
+
 /*First section codes*/
-#section-container {
-    padding: 10rem 3rem;
+.section-container {
+    padding: 13rem 3rem;
     background-color: var(--container-color);
     background-image: url(../assets/img/giphy.gif);
     background-repeat: no-repeat;
@@ -260,4 +285,4 @@ main {
 
 .bx-chevron-up:hover {
     color: var(--first-color-dark);
-  }
+}

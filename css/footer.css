@@ -19,6 +19,7 @@
 #footer {
     background-color: var(--body-color);
     color: #FFFFFF;
+    padding-bottom: 15px;
 }
 
 .card-footer {
