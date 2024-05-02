@@ -1,0 +1,66 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+      /*========== Colors ==========*/
+  /* Color mode HSL(hue, saturation, lightness) */
+  --first-color: hsl(19, 67%, 52%);
+  --first-color-dark: hsl(27, 73%, 47%) ;
+  --first-color-light: hsl(24, 63%, 53%);
+  --title-color: hsl(0, 0%, 87%);
+  --text-color: hsl(0, 0%, 69%);
+  --body-color: hsl(200, 12% , 5% );
+  --container-color: hsl(30, 10%, 8%);
+  --border-color: hsl(0, 0%, 20%);
+  --white: #fff;
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #FFC107;
+  --secundario: #0097A7;
+  --gris: #757575;
+  --grisClaro: #DFE9F3;
+  --orange: #f39708;
+  --azulOscuro: #180560;
+  --claro: #efd2be;
+  --hueso: #f8f6f5;
+  --dark-orange: #ff6e00;
+  --orange-claro: #febd69;
+
+    /*========== Font and typography ==========*/
+  /* .5rem = 8px | 1rem = 16px ... */
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 3rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2.25rem;
+  --h3-font-size: 1.5rem;
+  --larger-font-size: 1.2rem;
+  --large-font-size: 1.125rem;
+
+  /*========== Font weight ==========*/
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-600: 600;
+}
+
+input,
+textarea,
+button,
+body{
+  font-family: var(--body-color);
+  font-size: var(--larger-font-size);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--weight-600);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}

@@ -1,0 +1,52 @@
+/* Icon social media code */
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media a {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding-top: 0.5rem;
+    margin: 10px;
+}
+
+.social-media a:hover {
+    color: rgb(255, 158, 12);
+}
+
+/* Footer code */
+#footer {
+    background-color: var(--body-color);
+    color: #FFFFFF;
+}
+
+.card-footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+/* .card-footer li {
+    display: block;
+    justify-content: center;
+    margin-right: 500px;
+    border: 1px solid red;
+    padding: 0 1rem;
+    color: #FFFFFF;
+    text-decoration: none;
+} */
+
+.card-footer li a {
+color: #FFFFFF;
+padding-right: 1rem;
+
+}
+
+.card-footer li a:hover {
+    color: rgb(255, 158, 12);
+}
+
+span {
+padding-right: 1rem;
+}
