@@ -5,6 +5,10 @@
     justify-content: center;
     padding: 5rem 3rem;
     gap: 50px;
+    min-height: 800px;
+    background-image: url(../assets/img/paint-4.png);
+    background-repeat: no-repeat;
+    background-position: end;
 }
 
 .card-projects {

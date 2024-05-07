@@ -108,12 +108,14 @@
 main {
     background-color: var(--body-color);
     color: var(--text-color);
+    
 }
 
 /*First article codes*/
 .article-container {
    padding: 20px 30px;
    margin-bottom: 27px;
+   
 }
 
 .about, .card-article {
@@ -133,6 +135,9 @@ main {
 .about {
     min-height: 480px;
     border: 1px solid transparent;
+    background-image: url(../assets/img/paint-4.png);
+    background-repeat: no-repeat;
+    background-position: end;
 }
 
 /* Descriptions */
@@ -203,11 +208,11 @@ main {
 
 .resume-heading,
 .resume-item {
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid orange;
 }
 
 .resume-item:not(:first-child) {
-    border-right: 2px solid var(--border-color);
+    border-right: 2px solid orange;
 }
 
 .resume-item {

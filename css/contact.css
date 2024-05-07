@@ -1,0 +1,94 @@
+
+.container-form {
+    min-height: 800px;
+    background-image: url(../assets/img/paint-4.png);
+    background-repeat: no-repeat;
+    background-position: end;
+    
+}
+
+.container-form {
+    display: grid;
+    place-items: center;
+    
+}
+
+.card-form {
+    width: 40%;
+    padding: 10px ;
+    
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 5px  solid orange;
+    font-size: 1rem;
+    padding-right: 10px;
+    background: white;
+    outline: none;
+    overflow: hidden;  
+    color: black;
+}
+
+
+
+#form-container {
+    height: 600px;
+    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: auto; /* Columna única */
+    border-radius: 5px;
+    border: 1px  solid orange;
+    background: rgba(0, 0, 0, 0.958);
+}
+
+.form-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para los campos "Name" y "Email" */
+    grid-gap: 10px; /* Espacio entre columnas */
+}
+
+#email-field{
+    grid-column: 1;
+    
+}
+
+
+#message-field {
+    grid-column: span 2;
+}
+
+
+.form-title {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.btn-form {
+    width: 100px;
+    grid-column: 1 ;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px ;
+    border: 1px solid orange;
+    position: relative;
+    left: 400px;
+}
+
+.btn-form:hover {
+    background-color: orange;
+    color: white;
+    transition: all 0.5s;
+}
