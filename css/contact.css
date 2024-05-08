@@ -3,6 +3,7 @@
     min-height: 800px;
     background-image: url(../assets/img/paint-4.png);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: end;
     
 }
@@ -36,18 +37,21 @@ textarea{
     outline: none;
     overflow: hidden;  
     color: black;
+    
 }
 
 
 
 #form-container {
-    height: 600px;
+    height: 630px;
     padding: 15px 10px;
     display: grid;
     grid-template-columns: auto; /* Columna única */
-    border-radius: 5px;
+    border-radius: 10% 10% 10% 10%;
+    /* border-radius: 10% 30% 10% 30%; */
     border: 1px  solid orange;
     background: rgba(0, 0, 0, 0.958);
+    
 }
 
 .form-fields {
@@ -57,9 +61,10 @@ textarea{
 }
 
 #email-field{
-    grid-column: 1;
-    
+    grid-column: 1;  
 }
+
+
 
 
 #message-field {
@@ -69,7 +74,9 @@ textarea{
 
 .form-title {
     color: white;
-    font-size: 2rem;
+    font-family:  sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
     text-align: center;
     
 }
