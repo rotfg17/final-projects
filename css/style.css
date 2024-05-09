@@ -53,7 +53,7 @@
 .section-container {
     padding: 13rem 3rem;
     background-color: var(--container-color);
-    background-image: url(../assets/img/giphy.gif);
+    background-image: url(../assets/gif/giphy.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
