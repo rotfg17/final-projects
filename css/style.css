@@ -292,3 +292,38 @@ main {
 .bx-chevron-up:hover {
     color: var(--first-color-dark);
 }
+
+
+/*Container float home*/
+.content-float{
+    margin-top: 60px;
+    margin-left: 40px;
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+}
+
+.float-left {
+    float: left;
+    padding-right: 10px;
+}
+
+.clear-left {
+    clear: both;
+}
+
+/* .float-right {
+    float: right;
+    padding-left: 10px;
+} */
+
+.title-float{
+    font-size: 30px;
+    padding: 15px 20px;
+    font-weight: bold;
+    
+}
+
+.des-float {
+    font-size: 15px;
+}
