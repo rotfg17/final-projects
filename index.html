@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--=============== FONT AWESOME ===============-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-     <!--=============== boxicons ===============-->
-     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
- 
-     <!--=============== CSS ===============-->
-     <link rel="stylesheet" href="css/style.css" />
-     <link rel="stylesheet" href="css/main.css" />
-     <link rel="stylesheet" href="css/footer.css" />
     <title>Robinson's Portfolio</title>
+    
+    <!--=============== FONT AWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!--=============== boxicons ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
+
+    <!--=============== unicons ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 </head>
 <body>
 
+    <!--=============== HEADER ===============-->
     <header>
         <nav class="card-menu">
-            <style>
-                .card-menu {
-                    background-color: black;
-                }
-            </style>
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/logo.png" alt="Logo"> Robinson Chalas
+            </a>
             <ul class="menu-container">
                 <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about" >About</a></li>
-                <li><a href="#experience" >Experience</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="pages/services.html">Services</a></li>
                 <li><a href="pages/projects.html">Projects</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
@@ -35,32 +38,39 @@
         </nav>
     </header>
 
+    <!--=============== MAIN ===============-->
     <main>
-        <section class="section-container"id="home">
-            <div class="card-section" >
-                <span class="home-small" >Hello</span> 
+        <!--=============== HOME SECTION ===============-->
+        <section class="section-container" id="home">
+            <div class="card-section">
+                <span class="home-small">Hello</span>
                 <h1 class="home-title" style="color: whitesmoke;">
-                    <span>I'M</span>
-                    Robinson
-                    <br>
-                    a
-                    <span>Web Developer</span>
+                    <span>I'M</span> Robinson
+                    <br> a <span>Web Developer</span>
                 </h1>
-                <p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, unde at sapiente excepturi eos asperiores dicta iusto et eligendi molestiae. Nulla neque ab a modi ipsa molestiae dolorum quisquam ratione? Libero, blanditiis dolorum quisquam repudiandae ullam debitis ea aliquid nobis, voluptatibus ex consectetur magni, eligendi nam animi. Eaque, placeat iure.</p>
+                <p class="information">
+                    Experienced IT professional with over 5 years in the industry since 2016. Currently expanding expertise into web 
+                    development, bringing a strong foundation in technology and a commitment to staying at the forefront of the field.
+                </p>
                 <div class="section-btns">
-                <a class="btn" href="https://github.com/rotfg17" target="_blank">Portfolio</a>
-                <a class="btn btn-transparent" href="pages/contact.html">Hire me</a>
-            </div>
+                    <a class="btn" href="https://github.com/rotfg17" target="_blank">
+                        <i class='bx bxl-github' style="position: relative; top: 1px;"></i> Portfolio
+                    </a>
+                    <a class="btn btn-transparent" href="pages/contact.html">Hire me</a>
+                </div>
             </div>
         </section>
-        
-        <!--=============== ABOUT ===============-->
+
+        <!--=============== ABOUT SECTION ===============-->
         <article class="article-container" id="about">
             <img src="assets/img/about.png" class="about" alt="My picture">
             <div class="card-article">
-                <h2 class="section-title " data-title="Who am I?">
-                    I'M Robinson Chalas, a Web Developer</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius reprehenderit pariatur sint quaerat repellat deserunt dolores aliquid consequuntur adipisci. Ut fugiat dolorem mollitia dignissimos vero, officiis, voluptates soluta esse consectetur quia est nesciunt dicta blanditiis at incidunt cum illo aut, rem corporis a delectus quae tenetur? Odio dolorum quibusdam quasi?</p>
+                <h2 class="section-title" data-title="Who am I?">I'M Robinson Chalas, a Web Developer</h2>
+                <p>
+                    Every day I strive to learn something new and improve myself on a personal and professional level. 
+                    In addition to my love for technology, I really enjoy baseball, which is my favorite sport. 
+                    In my free time, I like to listen to music and share special moments with my family.
+                </p>
 
                 <h3 class="data-title">Name:</h3>
                 <span class="data-description">Robinson Chalas Jimenez</span>
@@ -74,165 +84,163 @@
                 <h3 class="data-title">Email:</h3>
                 <span class="data-description">Robinsonchalasj@gmail.com</span>
 
-                <a href="assets/file/Robinson_Chalas_Resume.pdf" download="resume.pdf"  class="btn btn-transparent btn-cv">Download CV</a>
+                <a href="assets/file/Robinson_Chalas_Resume.pdf" download="Robinson_Chalas_Resume.pdf" class="btn btn-transparent btn-cv">Download CV</a>
             </div>
         </article>
 
-        <!--=============== QUALIFICATION ===============-->
+        <!--=============== QUALIFICATION SECTION ===============-->
         <section class="qualification section" id="experience">
-            <h2 class="section-title title-center" data-title="My Journey">
-                Qualification</h2>
-                <div class="resume-container grid">
-                    <div class="resume-group">
-                        <h3 class="resume-heading">Education</h3>
-                        <div class="resume-items">
-                            <div class="resume-item">
-                                <div class="resume-header">
-                                    <h3 class="resume-subtitle">Tamwood Careers</h3>
-                                    <span class="resume-icon"></span>
-                                </div>
-
-                                <div class="resume-content">
-                                    <div class="resume-date-title">
-                                        <h3 class="resume-title">Front End Programing</h3>
-                                        <span class="resume-date">2024 - 2024</span>
-                                    </div>
-
-                                    <p class="resume-description">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem quas vel optio ratione fuga aut at facilis culpa deserunt molestias accusantium inventore libero, unde dolor veritatis. Maiores labore excepturi laborum. A unde harum explicabo nihil architecto repellat consequatur quo tenetur dolorum hic vel, minima veritatis eius facilis! Animi, ducimus.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="resume-item">
-                                <div class="resume-header">
-                                    <h3 class="resume-subtitle">Computer Science</h3>
-                                    <span class="resume-icon"></span>
-                                </div>
-
-                                <div class="resume-content">
-                                    <div class="resume-date-title">
-                                        <h3 class="resume-title">University</h3>
-                                        <span class="resume-date">2017 - 2023</span>
-                                    </div>
-
-                                    <p class="resume-description">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem quas vel optio ratione fuga aut at facilis culpa deserunt molestias accusantium inventore libero, unde dolor veritatis. Maiores labore excepturi laborum. A unde harum explicabo nihil architecto repellat consequatur quo tenetur dolorum hic vel, minima veritatis eius facilis! Animi, ducimus.
-                                    </p>
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal Journey</span>
+        
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <!-- Añadir data-tab para identificar las secciones -->
+                    <div class="qualification__button qualification__active Button--flex" data-tab="education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i> Education
+                    </div>
+                    <div class="qualification__button Button--flex" data-tab="experience">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i> Experience
+                    </div>
+                </div>
+        
+                <div class="qualification__sections">
+                    <!-- Education Section -->
+                    <div class="qualification__content qualification__content-active" data-content="education">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Tamwood College</h3>
+                                <span class="qualification__subtitle">Diploma in Web Development</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar"></i> Currently
                                 </div>
                             </div>
-
-                            <div class="resume-item">
-                                <div class="resume-header">
-                                    <h3 class="resume-subtitle">IT Technical</h3>
-                                    <span class="resume-icon"></span>
-                                </div>
-
-                                <div class="resume-content">
-                                    <div class="resume-date-title">
-                                        <h3 class="resume-title">High School</h3>
-                                        <span class="resume-date">2010 - 2015</span>
-                                    </div>
-
-                                    <p class="resume-description">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem quas vel optio ratione fuga aut at facilis culpa deserunt molestias accusantium inventore libero, unde dolor veritatis. Maiores labore excepturi laborum. A unde harum explicabo nihil architecto repellat consequatur quo tenetur dolorum hic vel, minima veritatis eius facilis! Animi, ducimus.
-                                    </p>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">UNNATEC University</h3>
+                                <span class="qualification__subtitle">Bachelor in Computer Science</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar"></i> 2017 - 2023
                                 </div>
                             </div>
                         </div>
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">High School</h3>
+                                <span class="qualification__subtitle">Diploma in IT Technical</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar"></i> 2010 - 2015
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
                     </div>
-
-
-                    <div class="resume-group">
-                        <h3 class="resume-heading">Experience</h3>
-
-
-                        <div class="resume-items">
-                            <div class="resume-item">
-                                <div class="resume-header">
-                                    <h3 class="resume-subtitle">Project Lead</h3>
-                                    <span class="resume-icon"></span>
-                                </div>
-
-                                <div class="resume-content">
-                                    <div class="resume-date-title">
-                                        <h3 class="resume-title">Digital Newspaper</h3>
-                                        <span class="resume-date">2023 - Present</span>
-                                    </div>
-
-                                    <p class="resume-description">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem quas vel optio ratione fuga aut at facilis culpa deserunt molestias accusantium inventore libero, unde dolor veritatis. Maiores labore excepturi laborum. A unde harum explicabo nihil architecto repellat consequatur quo tenetur dolorum hic vel, minima veritatis eius facilis! Animi, ducimus.
-                                    </p>
+        
+                    <!-- Experience Section -->
+                    <div class="qualification__content" data-content="experience">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">IT Support Specialist</h3>
+                                <span class="qualification__subtitle">Grupo Carol</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar"></i> 2018 - 2024
                                 </div>
                             </div>
-
-                            <div class="resume-item">
-                                <div class="resume-header">
-                                    <h3 class="resume-subtitle">Project Lead</h3>
-                                    <span class="resume-icon"></span>
-                                </div>
-
-                                <div class="resume-content">
-                                    <div class="resume-date-title">
-                                        <h3 class="resume-title">Hardware Store</h3>
-                                        <span class="resume-date">2023 - 2023</span>
-                                    </div>
-
-                                    <p class="resume-description">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem quas vel optio ratione fuga aut at facilis culpa deserunt molestias accusantium inventore libero, unde dolor veritatis. Maiores labore excepturi laborum. A unde harum explicabo nihil architecto repellat consequatur quo tenetur dolorum hic vel, minima veritatis eius facilis! Animi, ducimus.
-                                    </p>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Junior Developer</h3>
+                                <span class="qualification__subtitle">Digital Newspaper</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar"></i> 2023 - 2024
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="resume-item">
-                                <div class="resume-header">
-                                    <h3 class="resume-subtitle">Infrastructure Server Analytics + It Support Specialist</h3>
-                                    <span class="resume-icon"></span>
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Junior Developer</h3>
+                                <span class="qualification__subtitle">Hardware Store</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar"></i> 2023 - 2023
                                 </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
 
-                                <div class="resume-content">
-                                    <div class="resume-date-title">
-                                        <h3 class="resume-title">Carol Group</h3>
-                                        <span class="resume-date">2022 - 2024</span>
-                                    </div>
-
-                                    <p class="resume-description">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem quas vel optio ratione fuga aut at facilis culpa deserunt molestias accusantium inventore libero, unde dolor veritatis. Maiores labore excepturi laborum. A unde harum explicabo nihil architecto repellat consequatur quo tenetur dolorum hic vel, minima veritatis eius facilis! Animi, ducimus.
-                                    </p>
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">IT Support Specialist</h3>
+                                <span class="qualification__subtitle">Majestic Hotel</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar"></i> 2016 - 2018
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
-
-        <!--=============== Services ===============-->
-
+        
         
 
-        <!-- Button Back to top-->
-            <a href="#" class="back-top" title="Volver arriba"><i class='bx bx-chevron-up'></i></a>
+        <!-- Button Back to top -->
+        <a href="#" class="back-top" title="Volver arriba">
+            <i class='bx bx-chevron-up'></i>
+        </a>
     </main>
-   
- 
-<hr>
-        <!--==================== FOOTER ====================-->
+
+    <!--=============== FOOTER ===============-->
     <footer id="footer" aria-label="Footer with links">
         <div class="social-media">
             <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
         </div>
         <ul class="card-footer">
             <li><a href="pages/privacy.html">Privacy</a></li>
             <li><a href="#">Terms</a></li>
             <li><a href="pages/contact.html">Contact</a></li>
             <span class="hr">| </span>
-            <li><p>&copy; Created by Robinson Chalas in <time datetime="2024">2024</time> </p></li>
+            <li><p>&copy; Created by Robinson Chalas in <time datetime="2024">2024</time></p></li>
         </ul>
     </footer>
 
-
-<script src="js/main.js"></script>
+    <!--=============== JS ===============-->
+    <script src="js/main.js"></script>
+    
 </body>
 </html>

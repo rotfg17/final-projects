@@ -3,109 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--=============== FONT AWESOME ===============-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!--=============== FONT AWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-     <!--=============== boxicons ===============-->
-     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
- 
-     <!--=============== CSS ===============-->
-     <link rel="stylesheet" href="../css/style.css" />
-     <link rel="stylesheet" href="../css/main.css" />
-     <link rel="stylesheet" href="../css/footer.css" />
-     <link rel="stylesheet" href="../css/projects.css" />
-     <link rel="stylesheet" href="../css/contact.css" />
+    <!--=============== boxicons ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+
     <title>Robinson Portfolio</title>
 </head>
 <body>
-    <nav class="card-menu">
-        <ul class="menu-container">
-            <li><a href="../index.html" >Home</a></li>
-            <li><a href="../#about">About</a></li>
-            <li><a href="../#experience" >Experience</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html"  class="active">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="card-menu">
+            <a href="index.html" class="nav__logo"><img src="../assets/img/logo.png" alt="Robinson Logo"> Robinson</a> 
+            <ul class="menu-container">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#experience">Experience</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="container-form-contact">
         <section class="container-form">
             <div class="card-form">
                 <form id="form-container" action="/submit-path" method="post">
                     <h1 class="form-title">Contact Us</h1>
-                
                     <div class="form-fields">
                         <div id="name-field">
                             <label for="name-input">First Name</label>
-                            <input type="text" name="name" id="name-input" placeholder="Enter First Name">
+                            <input type="text" name="first-name" id="name-input" placeholder="Enter First Name" required>
                         </div>
-                
+
                         <div id="last-field">
                             <label for="last-input">Last Name</label>
-                            <input type="text" name="last-name" id="last-input" placeholder="Enter Last Name">
+                            <input type="text" name="last-name" id="last-input" placeholder="Enter Last Name" required>
                         </div>
 
                         <div id="email-field">
                             <label for="email-input">Email</label>
-                            <input type="email" name="email" id="email-input" placeholder="Email">
+                            <input type="email" name="email" id="email-input" placeholder="Email" required>
                         </div>
 
-                        <div id="form-fields">
-                        <label for="role-select">Services</label>
-                            <select id="role-select" name="reason">
-                                <option value="">Frontend Developer</option>
-                                <option value="job">Backend Developer</option>
-                                <option value="job">It Support Specialist</option>
-                                <option value="job">Infrastructure Server Analytics</option>
-                                <option value="job">Website Bootstrap</option>
-                                <option value="job">UX Designer</option>
-                                <!-- Add more options here -->
+                        <div id="service-field">
+                            <label for="role-select">Services</label>
+                            <select id="role-select" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="frontend">Frontend Developer</option>
+                                <option value="backend">Backend Developer</option>
+                                <option value="it-support">IT Support Specialist</option>
+                                <option value="server-analytics">Infrastructure Server Analyst</option>
+                                <option value="bootstrap">Website Bootstrap</option>
+                                <option value="ux-designer">UX Designer</option>
                             </select>
                         </div>
 
-                            <div id="message-field">
-                                <label for="addres">Message</label>
-                                <textarea id="message-area" rows="4"cols="50"  name="addres"></textarea>
-                            </div>
+                        <div id="message-field">
+                            <label for="message-area">Message</label>
+                            <textarea id="message-area" name="message" rows="4" placeholder="Enter your message here" required></textarea>
+                        </div>
 
-                            <div id="phone-field">
-                                <label for="phone-input">Phone Number</label>
-                                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="+1 (123) 456-7890">
-                            </div>
+                        <div id="phone-field">
+                            <label for="phone-input">Phone Number</label>
+                            <input type="tel" name="phone" id="phone-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                        </div>
 
-                            <div id="phone-field">
-                                <label for="phone-input">Alternative Number</label>
-                                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="+1 (123) 456-7890">
-                            </div>
+                        <div id="alt-phone-field">
+                            <label for="alt-phone-input">Alternative Number</label>
+                            <input type="tel" name="alt-phone" id="alt-phone-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                        </div>
 
-                    <button class="btn-form" type="submit">Send Now</button>
+                        <button class="btn-form" type="submit">Send Now</button>
                     </div>
                 </form>
-  
             </div>
         </section>
     </main>
-   
- 
-<hr>
-        <!--==================== FOOTER ====================-->
+
     <footer id="footer" aria-label="Footer with links">
         <div class="social-media">
             <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
         </div>
         <ul class="card-footer">
             <li><a href="privacy.html">Privacy</a></li>
             <li><a href="#">Terms</a></li>
             <li><a href="contact.html">Contact</a></li>
             <span class="hr">| </span>
-            <li><p>&copy; Created by Robinson Chalas in <time datetime="2024">2024</time> </p></li>
+            <li><p>&copy; Created by Robinson Chalas in <time datetime="2024">2024</time></p></li>
         </ul>
     </footer>
-
-   
-    
 </body>
 </html>

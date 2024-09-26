@@ -1,23 +1,42 @@
-
+/* Container for the form */
 .container-form {
     min-height: 800px;
     background-image: url(../assets/img/paint-4.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: end;
-    
-}
-
-.container-form {
+    background-position: center;
     display: grid;
     place-items: center;
-    
+    padding: 2rem;
 }
 
+/* Styling for the card containing the form */
 .card-form {
-    width: 40%;
-    padding: 10px ;
-    
+    width: 100%;
+    max-width: 500px; /* Sets a max width to control size */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form container */
+#form-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 1rem; /* Space between form elements */
+}
+
+/* Form fields with two columns */
+.form-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* Make message field span across both columns */
+#message-field {
+    grid-column: span 2;
 }
 
 textarea {
@@ -26,77 +45,85 @@ textarea {
 
 input,
 select,
-textarea{
+textarea {
     width: 100%;
     padding: 10px;
-    border: none;
-    border-bottom: 5px  solid orange;
     font-size: 1rem;
-    padding-right: 10px;
-    background: white;
-    outline: none;
-    overflow: hidden;  
+    border: none;
+    border-bottom: 2px solid orange;
+    background-color: white;
     color: black;
-    
+    outline: none;
+    transition: border-color 0.3s;
 }
 
-
-
-#form-container {
-    height: 630px;
-    padding: 15px 10px;
-    display: grid;
-    grid-template-columns: auto; /* Columna única */
-    border-radius: 10% 10% 10% 10%;
-    /* border-radius: 10% 30% 10% 30%; */
-    border: 1px  solid orange;
-    background: rgba(0, 0, 0, 0.958);
-   
-    
+/* Form field focus state */
+input:focus, select:focus, textarea:focus {
+    border-color: orange;
 }
 
-.form-fields {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas para los campos "Name" y "Email" */
-    grid-gap: 10px; /* Espacio entre columnas */
-}
-
-#email-field{
-    grid-column: 1;  
-}
-
-
-
-
-#message-field {
-    grid-column: span 2;
-}
-
-
+/* Title styling */
 .form-title {
     color: white;
-    font-family:  sans-serif;
+    font-family: sans-serif;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
-    
+    margin-bottom: 1rem;
 }
 
+/* Button styling */
 .btn-form {
-    width: 100px;
-    grid-column: 1 ;
+    grid-column: span 2;
+    width: 100%;
+    padding: 10px;
     font-weight: 600;
     cursor: pointer;
     background-color: transparent;
     color: white;
-    border-radius: 5px ;
-    border: 1px solid orange;
-    position: relative;
-    left: 400px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
+/* Button hover effect */
 .btn-form:hover {
     background-color: orange;
     color: white;
-    transition: all 0.5s;
+    transition: background-color 0.3s;
+}
+
+/* Footer styles */
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+footer .social-media {
+    margin-bottom: 1rem;
+}
+
+footer .card-footer {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .card-footer li {
+    display: inline;
+}
+
+footer .card-footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .card-footer p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: white;
 }

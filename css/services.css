@@ -1,24 +1,47 @@
-/*==============Services=================*/
-.services-container {
-    grid-template-columns: repeat(3, 1fr);
-    background-image: url(../assets/img/paint-4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: end;
-    
+/*=============== General Layout ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+main {
+    width: 100%;
+    padding: 4rem 0; /* Espacio para evitar que el contenido toque los bordes */
+}
+
+section {
+    padding: 4rem 2rem; /* Ajuste de padding en las secciones */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+/*============== Services ===============*/
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para los servicios */
+    gap: 2rem; /* Espaciado entre los servicios */
+    width: 100%; /* Asegura que ocupe el 100% del ancho del contenedor */
+}
 
 .services-item {
     background-color: var(--container-color);
-    border: 1px solid orange;
     padding: 2.5rem 1.8rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     position: relative;
-    transition: all .5 ease;
+    transition: all 0.5s ease;
+    min-height: 300px; /* Asegura una altura mínima para evitar que los items se vean cortados */
 }
 
-/*Services Hover*/
+/* Hover effect on services */
 .services-item:hover {
     background-color: var(--body-color);
     border-color: var(--border-color);
@@ -28,7 +51,6 @@
     color: var(--first-color);
     font-size: 1.8rem;
 }
-
 
 .services-title {
     font-size: var(--h3-font-size);
@@ -44,21 +66,22 @@
     opacity: 0.07;
 }
 
-/*==============SKILLS=================*/
+/*============== Skills ===============*/
 .skills-container {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 4rem;
+    gap: 4rem;
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+}
+
+.skills-item {
+    padding: 1.5rem;
 }
 
 .skills-titles {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.skills-titles,
-.skills-description {
-    padding-inline: 1.5rem;
 }
 
 .skills-name {
@@ -75,21 +98,18 @@
     margin-block: 1rem 1.8rem;
 }
 
-.skills-bar,
-.skills-percentage {
-    height: 2px;
-}
-
 .skills-bar {
     background-color: var(--border-color);
+    height: 2px;
 }
 
 .skills-percentage {
     background-color: var(--first-color);
     position: relative;
+    height: 2px;
 }
 
-.skills-percentage span{
+.skills-percentage span {
     background-color: var(--first-color);
     width: 23px;
     height: 22px;
@@ -98,6 +118,3 @@
     right: 0;
     top: -0.60rem;
 }
-
-
-

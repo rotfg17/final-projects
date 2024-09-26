@@ -46,6 +46,32 @@
         }
     });
 
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabButtons = document.querySelectorAll(".qualification__button");
+        const tabContents = document.querySelectorAll(".qualification__content");
+    
+        tabButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                // Remover la clase activa de todos los botones
+                tabButtons.forEach(btn => btn.classList.remove("qualification__active"));
+                
+                // Añadir la clase activa al botón seleccionado
+                button.classList.add("qualification__active");
+    
+                // Obtener el valor del atributo data-tab para identificar la sección
+                const tab = button.getAttribute("data-tab");
+    
+                // Ocultar todas las secciones
+                tabContents.forEach(content => {
+                    content.classList.remove("qualification__content-active");
+                });
+    
+                // Mostrar la sección correspondiente
+                const activeContent = document.querySelector(`[data-content="${tab}"]`);
+                activeContent.classList.add("qualification__content-active");
+            });
+        });
+    });
     
 
 

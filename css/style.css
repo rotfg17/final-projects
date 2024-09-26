@@ -1,5 +1,4 @@
-
-/*Navegation codes*/
+/*=============== Navegation Codes ===============*/
 .card-menu {
     position: fixed;
     width: 100%;
@@ -7,50 +6,51 @@
     right: 0;
     background-color: var(--body-color);
     color: #FFFFFF;
-    z-index: 999;   
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #FFFFFF;
+}
+
+.nav__logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 .menu-container {
-    margin-right: 400px;
-    padding: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .menu-container li {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 400;
+    margin-right: 20px;
 }
 
 .menu-container li a {
-    position: relative;
-    left: 700px;
-    color: #FFFFFF;
+    color: var(--title-color);
     padding: 10px;
     transition: color 0.3s;
 }
 
-.menu-container li a:link,
-.menu-container li a:visited {
-    color: var(--title-color);
-}
-
 .menu-container li a:hover,
-.menu-container li a:active {
-    color: rgb(255, 158, 12);
-} /*End navegation codes*/
-
-.menu-container li a:hover {
-    color: var(--dark-orange);
-}
-
-
-.menu-container li a.selected,
 .menu-container li a.active {
-    color: var(--dark-orange);
+    color: rgb(255, 158, 12);
 }
 
-
-
-/*First section codes*/
+/*=============== First Section ===============*/
 .section-container {
     padding: 13rem 3rem;
     background-color: var(--container-color);
@@ -58,7 +58,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.home-small{
+
+.home-small {
     font-size: 1.125rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -88,35 +89,32 @@
     font-size: var(--large-font-size);
     border-radius: 0.5rem;
     transition: all 0.5s ease;
-  }
-  
-  .btn-transparent {
+}
+
+.btn-transparent {
     background-color: transparent;
     color: var(--first-color);
-  }
+}
 
-/* Button hover */
 .btn:hover {
-    background-color: var (var(--first-color-dark));
-  }
-  
-  .btn-transparent:hover {
+    background-color: var(--first-color-dark);
+}
+
+.btn-transparent:hover {
     background-color: var(--first-color);
     color: var(--white);
-  }
-/*End section codes*/
+}
 
+/*=============== Main Section ===============*/
 main {
     background-color: var(--body-color);
     color: var(--text-color);
-    
 }
 
-/*First article codes*/
+/*=============== First Article ===============*/
 .article-container {
-   padding: 20px 30px;
-   margin-bottom: 27px;
-   
+    padding: 20px 30px;
+    margin-bottom: 27px;
 }
 
 .about, .card-article {
@@ -129,13 +127,11 @@ main {
     width: 59%;
     position: absolute;
     right: 5%;
-    border: 1px solid transparent;
     margin-top: 100px;
 }
 
 .about {
     min-height: 480px;
-    border: 1px solid transparent;
     background-image: url(../assets/img/paint-4.png);
     background-repeat: no-repeat;
     background-position: end;
@@ -147,13 +143,12 @@ main {
     color: var(--first-color-dark);
 }
 
-
 .data-title, .sub-title {
-   margin-top: 10px;
-   margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-/* btn cv */
+/* CV Button */
 .btn-cv {
     display: block;
     width: 21%;
@@ -163,119 +158,126 @@ main {
 }
 
 /*=============== QUALIFICATION ===============*/
-.section-title {
-    font-size: var(--h1-font-size);
-    font-weight: var(--weight-400);
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Asegura que el contenido esté alineado al principio */
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    padding-top: 3rem; /* Ajustar para darle espacio desde la parte superior */
 }
 
-.section-title::before {
-    content: attr(data-title);
+/* Estilo para el título de la sección */
+.section__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Mover el subtítulo hacia la parte superior */
+.section__subtitle {
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative; /* Mantiene la posición dentro del flujo normal */
+    top: -1rem; /* Ajusta este valor para mover hacia arriba el subtítulo */
+    color: var(--text-color);
+}
+
+
+.qualification__container {
+    max-width: 768px;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Centrar las pestañas de "Education" y "Experience" */
+.qualification__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espacio entre los botones */
+    margin-bottom: var(--mb-2);
+}
+
+.qualification__button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.qualification__button:hover {
+    color: var(--primary-color);
+}
+
+.qualification__icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+
+.qualification__active {
+    color: rgb(255, 158, 12);
+}
+
+/* Centrar el contenido de las secciones */
+.qualification__sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.qualification__content {
+    display: none;
+}
+
+.qualification__content-active {
     display: block;
-    color: var(--first-color);
-    font-size: var(--large-font-size);
-    font-weight: var(--weight-400);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+}
+
+/* Mejor alineación de los datos de la calificación */
+.qualification__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    align-items: center;
+    position: relative; /* Aseguramos que los elementos estén bien posicionados */
+
+}
+
+.qualification__line {
+    display: block;
+    height: 100%; /* Ajuste esto si la línea no se dibuja completamente */
+    background-color: rgb(255, 158, 12);
+    position: absolute;
+    top: 0; /* Asegura que comience desde el principio del contenedor */
+}
+
+
+.qualification__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
     margin-bottom: 0.5rem;
 }
 
-
-.title-center {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.grid {
-    display: grid;
-    gap: 1.5rem;
+.qualification__subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
 }
 
-.section {
-    max-width: 90%;
-    margin-inline: auto;
-    padding-inline: 1rem;
-    padding-block: 6rem;
-}
-.resume-container {
-    grid-template-columns: repeat(2, 1fr);
+.qualification__calendar {
+    font-size: var(--small-font-size);
 }
 
-.resume-heading {
-    text-align: center;
-    font-size: var(--h3-font-size);
-    padding-bottom: 2rem;
-}
 
-.resume-heading,
-.resume-item {
-    border-bottom: 2px solid orange;
-}
-
-.resume-item:not(:first-child) {
-    border-right: 2px solid orange;
-}
-
-.resume-item {
-    position: relative;
-}
-
-.resume-header {
-    padding: 2rem 1.5rem;
-}
-
-.resume-subtitle {
-    font-size: var(--large-font-size);
-    cursor: pointer;
-}
-
-.resume-icon {
-    background-color: var(--container-color);
-    border: 2px solid var(--border-color);
-    font-size: var(--h2-font-size);
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    line-height: 1.1em;
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-    right: -1.5rem;
-    bottom: -1.5rem;
-    z-index: 10;
-}
-
-.resume-content {
-    padding-inline: 1.5rem 3rem;
-}
-
-.resume-date-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.resume-title {
-    font-size: var(--h3-font-size);
-}
-
-.resume-date {
-    color: var(--title-color);
-    font-size: var(--large-font-size);
-}
-
-.resume-description {
-    margin-block: 1.25rem 2rem;
-}
-/*=============== Button Back to top ===============*/
-
+/* Botón de vuelta arriba */
 .back-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 99;
-    border: none;
-    outline: none;
     background-color: transparent;
     color: white;
     cursor: pointer;
@@ -294,8 +296,8 @@ main {
 }
 
 
-/*Container float home*/
-.content-float{
+/*=============== Float Content ===============*/
+.content-float {
     margin-top: 60px;
     margin-left: 40px;
     width: 90%;
@@ -312,16 +314,10 @@ main {
     clear: both;
 }
 
-/* .float-right {
-    float: right;
-    padding-left: 10px;
-} */
-
-.title-float{
+.title-float {
     font-size: 30px;
     padding: 15px 20px;
     font-weight: bold;
-    
 }
 
 .des-float {
