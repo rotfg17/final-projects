@@ -14,6 +14,12 @@
     <!--=============== unicons ===============-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -24,16 +30,16 @@
     <!--=============== HEADER ===============-->
     <header>
         <nav class="card-menu">
-            <a href="index.html" class="nav__logo">
+            <span class="nav__logo">
                 <img src="assets/img/logo.png" alt="Logo"> Robinson Chalas
-            </a>
+            </span>
             <ul class="menu-container">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="pages/services.html">Services</a></li>
                 <li><a href="pages/projects.html">Projects</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
+                <!--<li><a href="pages/contact.html">Contact</a></li>-->
             </ul>
         </nav>
     </header>
@@ -54,13 +60,67 @@
                 </p>
                 <div class="section-btns">
                     <a class="btn" href="https://github.com/rotfg17" target="_blank">
-                        <i class='bx bxl-github' style="position: relative; top: 1px;"></i> Portfolio
+                        <i class='bx bxl-github' style="position: relative; top: 1px;"></i> Github
                     </a>
-                    <a class="btn btn-transparent" href="pages/contact.html">Hire me</a>
+                    <!-- Button to trigger the modal -->
+                    <a class="btn btn-transparent" href="#" data-bs-toggle="modal" data-bs-target="#hireMeModal">Contact me</a>
                 </div>
             </div>
         </section>
+        <!-- Modal Structure -->
+        <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content custom-modal-content" id="custom-modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title form-title" id="hireMeModalLabel">Contact Us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="container-form" action="/submit-path" method="post">
+                            <div class="form-fields">
+                                <div id="name-field">
+                                    <label for="name-input" style="color: white;">First Name</label>
+                                    <input type="text" name="first-name" id="name-input" placeholder="Enter First Name" required>
+                                </div>
+        
+                                <div id="last-field">
+                                    <label for="last-input" style="color: white;">Last Name</label>
+                                    <input type="text" name="last-name" id="last-input" placeholder="Enter Last Name" required>
+                                </div>
+        
+                                <div id="email-field">
+                                    <label for="email-input" style="color: white;">Email</label>
+                                    <input type="email" name="email" id="email-input" placeholder="Email" required>
+                                </div>
+        
+                                <div id="service-field">
+                                    <label for="role-select" style="color: white;">Services</label>
+                                    <select id="role-select" name="service" required>
+                                        <option value="">Select a Service</option>
+                                        <option value="frontend">Frontend Developer</option>
+                                        <option value="backend">Backend Developer</option>
+                                        <option value="it-support">IT Support Specialist</option>
+                                        <option value="server-analytics">Infrastructure Server Analyst</option>
+                                        <option value="bootstrap">Website Bootstrap</option>
+                                        <option value="ux-designer">UX Designer</option>
+                                    </select>
+                                </div>
+        
+                                <div id="message-field">
+                                    <label for="message-area" style="color: white;">Message</label>
+                                    <textarea id="message-area" name="message" rows="4" placeholder="Enter your message here" required></textarea>
+                                </div>
+        
+                                <button class="btn-form" type="submit">Send Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        
+        
         <!--=============== ABOUT SECTION ===============-->
         <article class="article-container" id="about">
             <img src="assets/img/about.png" class="about" alt="My picture">
@@ -233,7 +293,7 @@
         <ul class="card-footer">
             <li><a href="pages/privacy.html">Privacy</a></li>
             <li><a href="#">Terms</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
+            <!--<li><a href="contact.html">Contact</a></li>-->
             <span class="hr">| </span>
             <li><p>&copy; Created by Robinson Chalas in <time datetime="2024">2024</time></p></li>
         </ul>
@@ -241,6 +301,8 @@
 
     <!--=============== JS ===============-->
     <script src="js/main.js"></script>
+
+   
     
 </body>
 </html>

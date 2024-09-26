@@ -20,6 +20,10 @@
     color: #FFFFFF;
 }
 
+.nav__logo a {
+    text-decoration: none;
+}
+
 .nav__logo img {
     width: 50px;
     height: 50px;
@@ -43,6 +47,7 @@
     color: var(--title-color);
     padding: 10px;
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 .menu-container li a:hover,
@@ -322,4 +327,88 @@ main {
 
 .des-float {
     font-size: 15px;
+}
+
+
+/* Modal container */
+.custom-modal-content {
+    background-color: rgba(0, 0, 0, 0.9); /* Transparent background */
+    border: none; /* Remove borders */
+    box-shadow: none; /* No shadow to enhance transparency effect */
+}
+
+/* Container for the form inside the modal */
+.container-form {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly dark background to contrast with modal */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Backdrop customization */
+.modal-backdrop.show {
+    opacity: 0.7 !important; /* Dim the background when the modal is open */
+}
+
+/* Form fields and layout */
+.form-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+#message-field {
+    grid-column: span 2;
+}
+
+textarea {
+    resize: none;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid orange;
+    background-color: white;
+    color: black;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: orange;
+}
+
+/* Title styling */
+.form-title {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Button styling */
+.btn-form {
+    grid-column: span 2;
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-form:hover {
+    background-color: orange;
+    color: white;
+    transition: background-color 0.3s;
 }
